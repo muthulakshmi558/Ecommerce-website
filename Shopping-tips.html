@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Detail</title>
+  <link rel="icon" href="images/fav-icon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./Shopping-tips.css">
+</head>
+<body>
+<!-- Green Bar -->
+  <div class="green-bar">
+    Fresh & Organic produce from our farmers to your kitchen
+    
+  </div>
+
+  <!-- Search Bar -->
+  <!-- Header -->
+<div class="container-fluid py-2 navbar-background">
+  <div class="row align-items-center">
+    
+    <!-- Left Logo -->
+    <div class="col-12 col-md-2 logo-section">
+      
+      <div class="logo-text">
+       <a href="./Home.html">
+    <img src="./images/logo.png" alt="Logo" width="200px">
+  </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-12 col-md-10">
+      
+      <!-- Top: Search Bar -->
+      <form class="d-flex justify-content-end mb-2 " onsubmit="return handleSearch(event)">
+        <div class="input-group">
+          <input id="searchInput" type="text" class="form-control input-search no-radius" placeholder="Search for products">
+          
+          <button class="btn search-button no-radius" type="submit">
+      <img src="./images/search-icon.png" alt="Search" style="width: 21px; height: 21px;" />
+    Search</button>
+          
+        </div>
+      </form>
+
+      <!-- Bottom: Navbar with Toggle -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav align-items-center fw-bold">
+              <li class="nav-item"><a class="nav-link text-dark " href="./Home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Categories.html">Categories</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Best-sales.html">Best Sales</a></li>
+              <li class="nav-item"><a class="nav-link text-dark active" href="./Blogs.html">Blogs</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Cart.html"><img src="./images/cart-icon.png" alt="Cart" style="width: 24px;"></a></li>
+              <li class="nav-item ms-2">
+                <button class="btn btn-myaccount fw-bold text-white">My Account</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+  <div class="container bloglist-detail-container">
+
+    <h2 class="bloglist-title">Eco-Friendly Shopping Tips</h2>
+    <p class="bloglist-paragraph">
+Grocery Items should be an essential component of every interior design. Greenery brightens up indoor spaces and is known to have mood-boosting qualities. Indoor plants are popular because they are relatively easy to take care of, provide health benefits and can be used in a variety of indoor décor themes. Indoor plants are a great option for those who have little yard space for an outdoor garden or for those who live in climates with severely cold winters.    </p>
+<p>So, if you're caring for indoor plants for the first time, our ultimate guide will provide
+you with the necessary information to allow your green friends to thrive.
+To provide you with expert insight, we asked our Senior Horticulturist at Ambius, Matt Kostelnick, to answer the most frequently asked questions about indoor plants.
+</p>
+    <img src="./images/blog-read-more.png" alt="Grocery Image" class="bloglist-image" />
+
+    <h2 class="bloglist-title">Why shopping tip for groceries is important?</h2>
+    <p class="bloglist-paragraph">
+Indoor plants are plants that grow indoors. There are a variety of tropical plants, like palms, that thrive in indoor environments.    </p>
+
+    <h2 class="bloglist-title">Essential grocery lists?</h2>
+    <p class="bloglist-paragraph">
+Most of the time, indoor plants are already in containers, so there is no need to plant them. There are typically only two reasons you need to plant an indoor plant.<br> 
+1. If your plant is getting too big, then you will need to replant.   <br>
+2. If you wanted to grow bulbs indoors, then you will need to plant the bulbs
+yourself.
+ </p>
+
+  </div>
+<!-- Contact Banner -->
+
+
+<div class="feature-strip">
+  
+  <!-- Left Box -->
+  <div class="nav-box">
+    <div class="orange-box">
+      <h5>Get in Touch with us</h5>
+      <span>+91 91010 90000</span>
+    </div>
+  </div>
+
+  <!-- Right Features -->
+  <div class="features">
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/free-shipping-icon.png" alt="Shipping">
+      </div>
+      <div class="feature-text">
+        <h6>Free Shipping</h6>
+        <small>For Orders Above 500</small>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/fresh-produce-icon.png" alt="Produce">
+      </div>
+      <div class="feature-text">
+        <h6>Fresh Produce</h6>
+        <small>Guaranteed Product Waranty</small>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/safety-icon.png" alt="Secure">
+      </div>
+      <div class="feature-text">
+        <h6>100% Safety & Security</h6>
+        <small>Your Data is Highly Secured</small>
+      </div>
+    </div>
+  </div>
+
+</div>
+    <!--  contact banner end-->
+      <!-- footer start -->
+
+      <footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <img src="./images/logo.png" alt="Groceries at Doorstep Logo" class="footer-logo-img">
+
+
+        <p class="mt-3 footer-para">
+          Fresh groceries, particularly fruits, vegetables, whole grains, and lean proteins, play a crucial role in nourishing our bodies and promoting overall well-being.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4 mt-3">
+        <h5 class="footer-header">NAVIGATE</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="./Privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="./Terms-conditions.html">Terms & Conditions</a></li>
+          <li><a href="./How-to-order.html">How to Order</a></li>
+          <li><a href="./About-us.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-header">G-STORE</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Reg: T21542GST548</li>
+          <li>TIN: 14578452884</li>
+          <li>Email: groceriesatdoorstep@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      Copyrights 2022© Groceries At Doorstep Ltd
+    </div>
+  </div>
+</footer>
+</body>
+</html>

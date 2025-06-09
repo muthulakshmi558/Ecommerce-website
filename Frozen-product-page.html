@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frozen Product Page</title>
+  <link rel="icon" href="images/fav-icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./Frozen-product-page.css">
+</head>
+<body>
+<!-- Green Bar -->
+  <div class="green-bar">
+    Fresh & Organic produce from our farmers to your kitchen
+    
+  </div>
+
+  <!-- Search Bar -->
+  <!-- Header -->
+<div class="container-fluid py-2 navbar-background">
+  <div class="row align-items-center">
+    
+    <!-- Left Logo -->
+    <div class="col-12 col-md-2 logo-section">
+      
+      <div class="logo-text">
+       <a href="./Home.html">
+    <img src="./images/logo.png" alt="Logo" width="200px">
+  </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-12 col-md-10">
+      
+      <!-- Top: Search Bar -->
+      <form class="d-flex justify-content-end mb-2 " onsubmit="return handleSearch(event)">
+        <div class="input-group">
+          <input id="searchInput" type="text" class="form-control input-search no-radius" placeholder="Search for products">
+          
+          <button class="btn search-button no-radius" type="submit">
+      <img src="./images/search-icon.png" alt="Search" style="width: 21px; height: 21px;" />
+    Search</button>
+          
+        </div>
+      </form>
+
+      <!-- Bottom: Navbar with Toggle -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav align-items-center fw-bold">
+              <li class="nav-item"><a class="nav-link text-dark " href="./Home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-dark active" href="./Categories.html">Categories</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Best-sales.html">Best Sales</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Blogs.html">Blogs</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="./Cart.html"><img src="./images/cart-icon.png" alt="Cart" style="width: 24px;"></a></li>
+              <li class="nav-item ms-2">
+                <button class="btn btn-myaccount fw-bold text-white">My Account</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+<div class="container product-container">
+  <div class="row g-4">
+    
+    <!-- Left Images -->
+    <div class="col-md-6">
+      <img id="mainImage" src="./images/frozen-des1.png" class="product-image mb-3" alt="meat"/>
+      <div class="row g-2">
+        <div class="col-4">
+          <img src="./images/frozen-des1.png" class="thumb-img active" onclick="changeImage(this)" alt="thumb1">
+        </div>
+        <div class="col-4">
+          <img src="./images/frozen-des2.png" class="thumb-img" onclick="changeImage(this)" alt="thumb2">
+        </div>
+        <div class="col-4">
+          <img src="./images/frozen-des3.png" class="thumb-img" onclick="changeImage(this)" alt="thumb3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-md-6">
+      <h3 class="product-header">Frozen Meat</h3>
+      <p class="product-para">Each of our products are hand-selected from the local farmers and helps you improve good health</p>
+      <h4 class="product-price">₹ 120</h4>
+      <p class="product-para1">TAX INCLUDED | SHIPPING CALCULATED AT CHECKOUT</p>
+
+      <!-- Quantity & Unit -->
+      <div class="d-flex align-items-center mb-3 mt-3">
+        <button class="qty-btn" onclick="updateQty(-1)">−</button>
+        <span class="qty-value mx-3" id="qty">1</span>
+        <button class="qty-btn" onclick="updateQty(1)">+</button>
+      </div>
+<p id="selectedUnit" class="mb-4 quantity-text">Quantity: 1kg</p>
+      <!-- Weight Options -->
+      <div class="weight-select mb-3 mt-3">
+        <input type="radio" id="opt250" name="unit" value="250g">
+        <label for="opt250">250g</label>
+
+        <input type="radio" id="opt500" name="unit" value="500g">
+        <label for="opt500">500g</label>
+
+        <input type="radio" id="opt1kg" name="unit" value="1kg" checked>
+        <label for="opt1kg">1kg</label>
+      </div>
+
+      <!-- Show Selected Quantity -->
+      
+
+      <!-- Add to Cart -->
+            <button type="button" class="btn btn-add mb-3 mt-3" onclick="addToCartFromDetail()">
+        Add to Cart
+        </button>
+
+      <!-- Features -->
+      <p class="freeshipping">🚚 Free shipping on all orders over ₹450</p>
+      <p class="delivery">⏱️ Delivery in 3-4 working days</p>
+      <p><a href="#" class="success-text">Free delivery and return policies</a></p>
+    </div>
+  </div>
+</div>
+
+ <!-- Contact Banner -->
+
+ <div class="container content">
+  <div class="row ">
+    <div class="col-md-12">
+      <h2 class="fw-bold mb-3" style="text-decoration: underline;">DESCRIPTION</h2>
+      <p class="paragraph">
+       Strawberries are often described as sweet, juicy, and bright red berries with a fragrant, fruity aroma. They are typically sold fresh in containers or boxes and are a popular addition to various recipes and snacks.
+Here's a more detailed look at how strawberries might be described in a grocery store setting:
+
+      </p>
+      <p>Appearance:</p>
+      <ul>
+        <li>Color: Bright red, with variations depending on the variety.</li>
+        <li>Shape: Typically round or oval, with a smooth surface.</li>
+        <li>Seeds: The seeds are small, whitish or brownish specks that cover the surface of the fruit.</li>
+        <li>Freshness: Shiny, firm, and free from blemishes or mold.</li>
+      </ul>
+      <p>Taste and Aroma:</p>
+      <ul>
+        <li>Flavor: Sweet and juicy, with a slightly tart or sour note in some varieties.</li>
+        <li>Aroma: A pleasant, fruity, and fragrant aroma.</li>
+      </ul>
+      <p>Nutrition:</p>
+      <ul>
+        <li>Vitamin C: Rich in vitamin C, an important antioxidant.</li>
+        <li>Fiber: A good source of fiber</li>
+        <li>Other nutrients: Contains other vitamins, minerals, and antioxidants.</li>
+        <li>Low in calories: A healthy and low-calorie fruit.</li>
+      </ul>
+      <p>Uses:</p>
+      <ul>
+        <li>Fresh consumption: Enjoyed as a snack or added to salads, desserts, or smoothies.</li>
+        <li>Culinary applications: Used in jams, sauces, desserts, and other dishes.</li>
+        
+      </ul>
+      <p>Storage:</p>
+      <ul>
+        <li>Refrigeration: Should be refrigerated to maintain freshness.</li>
+        <li>Humidity: Best stored in the refrigerator at high humidity.</li>
+        
+      </ul>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="feature-strip">
+  
+  <!-- Left Box -->
+  <div class="nav-box">
+    <div class="orange-box">
+      <h5>Get in Touch with us</h5>
+      <span>+91 91010 90000</span>
+    </div>
+  </div>
+
+  <!-- Right Features -->
+  <div class="features">
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/free-shipping-icon.png" alt="Shipping">
+      </div>
+      <div class="feature-text">
+        <h6>Free Shipping</h6>
+        <small>For Orders Above 500</small>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/fresh-produce-icon.png" alt="Produce">
+      </div>
+      <div class="feature-text">
+        <h6>Fresh Produce</h6>
+        <small>Guaranteed Product Waranty</small>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="icon-circle">
+        <img src="./images/safety-icon.png" alt="Secure">
+      </div>
+      <div class="feature-text">
+        <h6>100% Safety & Security</h6>
+        <small>Your Data is Highly Secured</small>
+      </div>
+    </div>
+  </div>
+
+</div>
+    <!--  contact banner end-->
+      <!-- footer start -->
+
+      <footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <img src="./images/logo.png" alt="Groceries at Doorstep Logo" class="footer-logo-img">
+
+
+        <p class="mt-3 footer-para">
+          Fresh groceries, particularly fruits, vegetables, whole grains, and lean proteins, play a crucial role in nourishing our bodies and promoting overall well-being.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4 mt-3">
+        <h5 class="footer-header">NAVIGATE</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="./Privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="./Terms-conditions.html">Terms & Conditions</a></li>
+          <li><a href="./How-to-order.html">How to Order</a></li>
+          <li><a href="./About-us.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-header">G-STORE</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Reg: T21542GST548</li>
+          <li>TIN: 14578452884</li>
+          <li>Email: groceriesatdoorstep@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      Copyrights 2022© Groceries At Doorstep Ltd
+    </div>
+  </div>
+</footer>
+
+<script src="./Frozen-product-page.js"></script>
+
+</body>
+</html>

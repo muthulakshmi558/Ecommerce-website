@@ -1,0 +1,63 @@
+
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .progress-bar-custom span {
+      margin-right: 1rem;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .progress-bar-custom .active {
+      color: #4caf50;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .item-info h6 {
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .qty-btn {
+      background-color: #4caf50;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .summary-box {
+      background-color: #e8f5e9;
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+
+    .checkout-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.6rem 2rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    input {
+      margin-bottom: 1rem;
+    }
