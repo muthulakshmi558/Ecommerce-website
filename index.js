@@ -70,7 +70,7 @@
     localStorage.setItem('users', JSON.stringify(users));
 
     alert(`Registered successfully! Welcome, ${fullname}.`);
-    window.location.href = "home.html";
+    window.location.href = "./home.html";
   });
 
   document.getElementById('login-form').addEventListener('submit', function (e) {
@@ -100,5 +100,5 @@
     }
 
     alert(`Welcome back, ${user.fullname}!`);
-    window.location.href = "home.html";
+    window.location.href = "./home.html";
   });
