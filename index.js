@@ -57,9 +57,15 @@
     }
     if (!valid) return;
 
-    const users = Array.isArray(JSON.parse(localStorage.getItem('users') || '[]')) 
-    ? JSON.parse(localStorage.getItem('users')) 
-    : [];    
+    let users = [];
+    try {
+      const storedUsers = JSON.parse(localStorage.getItem('users'));
+      if (Array.isArray(storedUsers)) {
+      users = storedUsers;
+      }
+    } catch (e) {
+      users = [];
+    }  
   
   if (users.find(u => u.email === email)) {
       document.getElementById('register-email-error').textContent = 'Email already registered.';
